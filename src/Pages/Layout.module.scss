@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Itim&display=swap');
+$yellow: #F4AC45;
+$primary-text-color: #282626;
+$primary-background-color: #F0F1F1;
+.Layout{
+    display: flex;
+    background-color: #F0F1F1;
+    font-style: Istok Web;
+    justify-content: center;
+
+}
+.content{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+@import './Reset.scss'

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Itim&display=swap');
+$yellow: #F4AC45;
+$primary-text-color: #282626;
+$primary-background-color: #F0F1F1;
+
+.signIn {
+  color: $primary-text-color;
+  height: 100vh;
+  width: 100%;
+  background-color: $primary-background-color;
+  display: flex;
+}
+
+
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-size: 1.5vw;
+  font-family: 'Istok Web', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  p {
+    font-size: 3vw;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    input {
+      color: $primary-text-color;
+      border-radius: 0.2vw;
+      margin: 0.5vw 0;
+      background-color: $primary-background-color;
+      width: 25vw;
+      padding: 0.5vw 1vw;
+      font-size: 1.2vw;
+      border: 1px solid $primary-text-color;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type='email']
+    {
+      margin-bottom: 1vw;
+    }
+
+    button {
+      border: none;
+      background-color: $yellow;
+      color: $primary-text-color;
+      -webkit-appearance: none; 
+      appearance: none;
+      width: 25vw;
+      border-radius: 0.2vw;
+      margin-top: 1.5vw;
+      cursor: pointer;
+      padding: 0.5vw;
+      font-size: 1.4vw;
+      transition: background-color 0.3s ease;
+
+      
+    }
+  }
+
+  span {
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vw;
+
+    a {
+      color: $yellow;
+      text-decoration: none;
+      font-size: 1vw;
+      font-weight: 600;
+      transition: color 0.3s ease;
+
+     
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .signIn {
+    flex-direction: column;
+  }
+
+
+  .right {
+    width: 100vw;
+    height: 60vh;
+    p{
+        font-size: 6vw;
+    }
+    
+   
+    form {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      input {
+        width: 80%;
+        // height: 4vh;
+        font-size: 4vw;
+      }
+
+      button {
+        width: 80%;
+        font-size: 5vw;
+      }
+      span{
+        width: 80%;
+
+      }
+      a{
+        font-size: 2em;
+    }
+     
+    }
+  }
+}

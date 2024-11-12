@@ -1,0 +1,10 @@
+.Settings{
+   margin-left: 20vw;
+   background-color: #F0F1F1;
+    height: 100vh;
+}
+@media (max-width: 1024px) {
+    .Settings{
+        margin-left: 9vw;
+    }
+}

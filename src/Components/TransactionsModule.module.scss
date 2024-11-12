@@ -1,0 +1,153 @@
+$yellow: #F4AC45;
+$primary-text-color: #282626;
+$primary-background-color: #F0F1F1;
+
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Itim&display=swap');
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: $primary-text-color;
+    margin: 1vh 0;
+
+    a {
+        color: $yellow;
+        font-size: 1vw;
+        margin-left: 1.5vw;
+        cursor: pointer;
+    }
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    z-index: 1; /* Убедитесь, что это выше других элементов */
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+}
+.TransactionsModule {
+    margin: 1vw 0 1vw 2.5vw;
+    background-color: white;
+    width: 74.5vw;
+    justify-content: center;
+    padding: 0.5vw 2vw;
+    border-radius: 0.3vw;
+    font-family: 'Istok Web', sans-serif;
+
+    .transactionTable thead {
+        background-color: $primary-text-color;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        p{
+            font-size: 1vw;
+            font-weight: 600;
+        }
+    }
+
+    .transactionTable {
+        width: 100%;
+        padding-top: 3.5vh;
+        border-collapse: collapse; // Убирает двойные границы между ячейками
+        font-size: 1.2vw;
+
+        th, td {
+            padding: 0.5vw 1vw; // Добавляем padding для ячеек
+            text-align: left; // Выравнивание текста в ячейках
+            border-bottom: 1px solid #ddd; // Добавляем границу снизу
+        }
+        img{
+            width: 1vw;
+            height: 1vw;
+            cursor: pointer;
+        }
+
+        th {
+            background-color: $yellow; // Задаем цвет фона для заголовков
+            color: $primary-text-color; // Цвет текста заголовков
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9; // Фон для четных строк
+        }
+
+        tr:hover {
+            background-color: #f1f1f1; // Фон при наведении на строку
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .TransactionsModule {
+        width: 86vw;
+
+        .bottom {
+            .transactionTable {
+                font-size: 2vw !important; // Измените на подходящий размер
+            }
+            img{
+                height: 1.5vw;
+                width: 1.5vw;
+            }
+            p{
+                font-size: 2vw;
+            }
+        }
+        .top {
+            font-size: 3vw;
+            a{
+                font-size: 2vw !important;
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .TransactionsModule{
+    th:nth-child(2), /* Hide the "Details" column (second column) */
+    td:nth-child(2) {
+        display: none;
+    }
+    .top{
+        font-size: 3.5vw;
+        a{
+            font-size: 3vw!important;
+        }
+    }
+    .transactionTable{
+    td,th{
+        font-size: 3.5vw;
+       
+    }
+    img{
+        width: 3vw;
+        height: 3vw;
+    }
+}
+}
+}
+
+// @media (max-width: 450px) {
+//     .bottom p{
+//         font-size: 3vw !important;
+//     }
+//     .bottom{
+//         img{
+//             width: 3vw;
+//             height: 3vw;
+//         }
+//     }
+// }

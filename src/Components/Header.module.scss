@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Itim&display=swap');
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:80vw;
+    font-size: 2vw;
+    font-family: Istok Web;
+    padding: 0.5vw 2vw;
+    // height: 10vh;
+    background-color: white;
+    div{
+        font-size: 1vw;
+    }
+}
+@media (max-width:1024px) {
+    .Header{
+    width: 90vw;
+    font-size: 4vw;
+    div{
+        font-size: 2vw;
+    }
+}
+}
+@media (max-width:600px) {
+    .Header{
+        div{
+            font-size: 2.5vw;
+        }
+    }
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Itim&display=swap');
+
+$yellow: #F4AC45;
+$primary-text-color: #282626;
+$primary-background-color: #F0F1F1;
+
+.logo {
+    color: #F4AC45;
+    font-size: 2vw;
+    font-family: Itim;
+    margin-bottom: 15vh;
+}
+.logoMobile {
+    display: none;
+}
+
+.LeftMenu {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 0;
+    height: 100vh;
+    border-right: 0.1vw solid #282626;
+    background-color: white;
+    position: fixed;
+    left: 0;
+}
+
+.link {
+    display: flex;
+    text-decoration: none;
+    color: $primary-text-color;
+}
+
+.LeftMenuItem {
+    display: flex;
+    font-size: 1.5vw;
+    font-family: 'Istok Web', sans-serif;
+    width: 18vw;
+    height: 5vw;
+    align-items: center;
+    margin: 3vh 0;
+    cursor: pointer;
+    justify-content: start;
+    padding-left: 0.5vw;
+    // padding: 0.8vw 2.5vw;
+    img {
+        width: 3vw;
+        height: auto;
+        margin-right: 2vw;
+    }
+
+    span {
+        display: inline-block; // Make sure text is inline block for proper spacing
+    }
+}
+
+.leftMenuItemActive {
+    display: flex;
+    font-size: 1.5vw;
+    width: 18vw;
+    justify-content: start;
+    // padding-right: 15vw;
+    height: 5vw;
+    font-family: 'Istok Web', sans-serif;
+    background-color: #F4AC45;
+    align-items: center;
+    margin: 3vh 0;
+    cursor: pointer;
+    // padding: 0.5vw 1vw;
+    border-radius: 0.3vw;
+
+    img {
+        width: 3vw;
+        height: auto;
+        margin-right: 2vw;
+    }
+
+    span {
+        display: inline-block; // Make sure text is inline block for proper spacing
+    }
+}
+
+.settings {
+    margin-top: 25vh;
+}
+
+@media (max-width: 1024px) {
+    .LeftMenu {
+        width: 10vw;
+
+        .logo {
+            display: none;
+        }
+
+        .logoMobile {
+            display: flex;
+            color: #F4AC45;
+            font-size: 4vw;
+            font-family: Itim;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .LeftMenuItem {
+            width: 9.5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 2vw;
+            height: 10vw;
+            span {
+                display: none; // Hide text in mobile view
+            }
+
+            img {
+                width: 4vw;
+                height: auto;
+            }
+        }
+        .leftMenuItemActive {
+            // width: 10vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1vw 0 1vw 2vw;
+            // padding-left: 2vw;
+            height: 10vw;
+
+            span {
+                display: none; // Hide text in mobile view
+            }
+
+            img {
+                width: 4vw;
+                height: 4vw;
+            }
+        }
+    }
+}

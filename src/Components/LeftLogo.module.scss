@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Itim&display=swap');
+$yellow: #F4AC45;
+$primary-text-color: #282626;
+$primary-background-color: #F0F1F1;
+.left {
+    background-color: $yellow;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Itim', cursive;
+    font-size: 5vw;
+  }
+@media only screen and (max-width: 800px) {
+   
+  
+    .left {
+      width: 100vw;
+      height: 5vh;
+      font-size: 4vw;
+    }
+}

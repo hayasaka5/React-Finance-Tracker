@@ -1,0 +1,14 @@
+.Transactions {
+    margin-left: 19vw;
+    background-color: #F0F1F1;
+    min-height: 100vh; // Используем min-height вместо height
+    padding-bottom: 2vw; // Добавляем отступ снизу, чтобы дать немного пространства для контента
+
+    // Убедись, что контейнер может расширяться по мере добавления новых транзакций
+}
+
+@media (max-width: 1024px) {
+    .Transactions {
+        margin-left: 9vw;
+    }
+}

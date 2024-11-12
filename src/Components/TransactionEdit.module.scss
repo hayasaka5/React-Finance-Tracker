@@ -1,0 +1,193 @@
+$yellow: #F4AC45;
+$primary-text-color: #282626;
+$primary-background-color: #F0F1F1;
+
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Itim&display=swap');
+
+.TransactionDetailsModule {
+    position: fixed;
+    width: 50vw;
+    padding: 1vw;
+    background-color: white;
+    padding: 0.5vw 2vw;
+    top: 0;
+    margin-top: 14vh;
+    margin-left: 8vw;
+
+    border-radius: 0.5vh;
+    box-shadow: 8px 18px 50px -19px rgba(66, 68, 90, 1);
+
+    .top {
+        font-size: 2vw;
+    }
+
+    img {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2vw;
+
+        p {
+            margin-top: 1vh;
+        }
+
+        form {
+            font-size: 1.2vw;
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin-top: 2vh;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3vh;
+        font-size: 1.1vw;
+
+        button {
+            cursor: pointer;
+            border: 0;
+            width: 10vw;
+            height: 7vh;
+        }
+
+        .editButton {
+            background-color: $yellow;
+        }
+
+        .closeButton {
+            background-color: white;
+            border: 0.2vw solid $yellow;
+        }
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 2vw;
+    }
+
+    * {
+        font-family: 'Istok Web';
+    }
+}
+
+// Media query for screens smaller than 1024px
+@media (max-width: 1024px) {
+    .TransactionDetailsModule {
+        padding: 2vw;
+        margin-left: 15vw;
+        margin-right: 5vw;
+
+        .top {
+            font-size: 4vw;
+        }
+
+        img {
+            width: 3vw;
+            height: 3vw;
+        }
+
+        .details {
+            font-size: 1.8vw;
+
+            p {
+                margin-top: 2vh;
+            }
+
+            form {
+                font-size: 1.8vw;
+
+                label {
+                    margin-top: 3vh;
+                }
+            }
+        }
+
+        .bottom {
+            font-size: 1.5vw;
+
+            button {
+                width: 12vw;
+                height: 4vh;
+            }
+        }
+    }
+}
+
+// Media query for screens smaller than 600px
+@media (max-width: 600px) {
+    .TransactionDetailsModule {
+        padding: 3vw;
+        margin-left: 1vw;
+        margin-right: 0vw;
+        width: 80vw;
+        .top {
+            font-size: 6vw;
+        }
+
+        img {
+            width: 4.5vw;
+            height: 4.5vw;
+        }
+
+        .details {
+            font-size: 3.6vw;
+         
+
+            p {
+                margin-top: 1vh;
+            }
+
+            form {
+                font-size: 3vw;
+
+                label {
+                    margin-top: 4vh;
+                }
+            }
+        }
+
+        .bottom {
+            font-size: 2.5vw;
+
+            button {
+                width: 16vw;
+                height: 5vh;
+            }
+        }
+    }
+}
+@media (max-width: 450px) {
+    .TransactionDetailsModule {
+        .details {
+            font-size: 5vw;
+            
+
+            form {
+                font-size: 3vw;
+                label {
+                   margin: 1vh 0 0 0;
+                }
+            }
+        }
+    }
+    .bottom {
+        button {
+            width: 30vw !important;
+            font-size: 5vw;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+
+.Dashboard{
+    font-size: 2em;
+    background-color: #F0F1F1;
+    margin-left: 19vw;
+    min-height: 100vh; // Используем min-height вместо height
+    // padding-bottom: 0vw; 
+    // overflow-x: hidden;
+}
+// *{
+//     border: 0.1vw solid greenyellow;
+// }
+@media (max-width: 1024px) {
+    .Dashboard{
+    margin-left: 9vw;
+// padding-right: 1vw;
+}
+}

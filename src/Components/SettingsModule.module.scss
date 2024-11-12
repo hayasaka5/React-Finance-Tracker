@@ -1,0 +1,120 @@
+$yellow: #F4AC45;
+$primary-text-color: #282626;
+$primary-background-color: #F0F1F1;
+
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Itim&display=swap');
+
+.bigText {
+    font-size: 1.5vw;
+}
+
+.SettingsModule {
+    margin: 1vw;
+    padding: 1vw;
+    height: auto;
+    width: 40vw;
+    font-size: 1vw;
+    border-radius: 0.4vw;
+
+    a {
+        width: 10vw;
+        display: inline-block;
+    }
+
+    input {
+        margin: 0.5vw 0;
+    }
+
+    button {
+        margin: 1vw 0 1vw 10vw;
+        height: 3vw;
+        width: 12vw;
+        border: 0;
+        background-color: $yellow;
+        color: $primary-text-color;
+        -webkit-appearance: none; 
+        appearance: none;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    button:hover {
+        background-color: #f8b659;
+        transition: 0.2s ease-in-out;
+    }
+
+    font-family: 'Istok Web';
+    background-color: white;
+
+    .Error {
+        display: inline-block;
+        width: 20vw !important;
+        color: #A61E1E;
+    }
+}
+
+/* Медиа-запрос для ширины экрана меньше 800px (умножение на 2) */
+@media (max-width: 1024px) {
+    .SettingsModule {
+        margin: 2vw;
+        padding: 2vw;
+        width: 80vw;
+        font-size: 2vw;
+        border-radius: 0.8vw;
+
+        a {
+            width: 20vw;
+        }
+
+        input {
+            margin: 1vw 0;
+        }
+
+        button {
+            margin: 2vw 0 2vw 20vw;
+            height: 6vw;
+            width: 24vw;
+        }
+
+        .Error {
+            width: 40vw !important;
+        }
+    }
+
+    .bigText {
+        font-size: 3vw;
+    }
+}
+
+/* Медиа-запрос для ширины экрана меньше 600px (умножение на 2.5) */
+@media (max-width: 600px) {
+    .SettingsModule {
+        margin: 2.5vw;
+        padding: 2.5vw;
+        width: 80vw;
+        font-size: 2.5vw;
+        border-radius: 1vw;
+
+        a {
+            width: 25vw;
+        }
+
+        input {
+            margin: 1.25vw 0;
+        }
+
+        button {
+            margin: 2.5vw 0 2.5vw 25vw;
+            height: 7.5vw;
+            width: 30vw;
+        }
+
+        .Error {
+            width: 50vw !important;
+        }
+    }
+
+    .bigText {
+        font-size: 4.75vw;
+    }
+}
