@@ -1,8 +1,2 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Finance Tracker Application
+A finance tracker application developed with React, Redux, Firebase, and SASS, featuring user authentication, transaction management, and data visualization with React Charts 2. This app includes functionalities such as adding and editing transactions, password reset, and data sharing across components through Redux, all in a single-page application setup for seamless user experience.
